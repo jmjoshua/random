@@ -1,0 +1,22 @@
+{
+  "name": "random-project",
+  "version": "0.0.1",
+  "description": "Just something that's going to be cool",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmjoshua/random.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmjoshua/random/issues"
+  },
+  "homepage": "https://github.com/jmjoshua/random#readme",
+  "dependencies": {
+    "request-promise": "^4.2.5"
+  }
+}
