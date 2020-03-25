@@ -1,0 +1,18 @@
+/* ----------- Global Style --------------- */
+body {
+    color: #191716;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+/* ----------- Table Style --------------- */
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
+}
