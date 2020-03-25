@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jmjoshua/random#readme",
   "dependencies": {
-    "request-promise": "^4.2.5"
+    "request-promise": "^4.2.5",
+    "requirejs": "^2.3.6"
   }
 }
