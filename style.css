@@ -10,6 +10,11 @@ body {
   font-size: 14px;
   line-height: 1.4;
 }
+h1 {
+    color: red;
+    font-size: 50px;
+
+}
 /* ----------- Label Style --------------- */
 .centeredLabel {
   display: flex;
