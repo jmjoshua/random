@@ -8,13 +8,21 @@
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Oxanium:500,600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="/style.css">
   </head>
+  
   <body>
     <main>
       <!-- ***********************  ABOUT CORONA VIRUS  *********************** -->
     <header>
         <div class="content-wrap">
-        <h1>Corona Virus Statistics for testing purposes! </h1>
-            <p>Add Text Here</p>
+          <h1 class="centeredLabel">Corona Virus Statistics for testing purposes! </h1>
+              <p class="sortByLabel centeredLabel">Sort By:</p>
+              <div class="sortButtonContainer">
+                <button class="sortButton" onclick="sortByCity()" id="cityButton">City</button>
+                <button class="sortButton" onclick="sortByState()">State/Province</button>
+                <button class="sortButton" onclick="sortByCountry()">Country</button>
+                <button class="sortButton" onclick="sortByConfirmed()">Confirmed Cases</button>
+                <button class="sortButton" onclick="sortByDeaths()">Deaths</button>
+                </div>
         </div>
     </header>
     <table class = "statsTable">
