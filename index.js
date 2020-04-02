@@ -2,6 +2,7 @@ var data = null;
 var tabBody;
 var containsCity = false;
 var usingProvince = false;
+var currentCountry = "US";
 
 // First functions
 sortByConfirmed();
@@ -31,7 +32,7 @@ function fetchData(sortBy, reverse) {
         }
     });
 
-    xhr.open("GET", "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=US");
+    xhr.open("GET", "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=" + currentCountry);
     xhr.setRequestHeader("x-rapidapi-host", "covid-19-coronavirus-statistics.p.rapidapi.com");
     xhr.setRequestHeader("x-rapidapi-key", "2f865679d3msh8d12b01bc987b18p1fd323jsnd5ec6e7da75f");
 
@@ -93,7 +94,7 @@ function addRow(stat) {
 
     // Add city string if this query returned cities
     if (containsCity) {
-        cellsArray.unshift(stat.city); 
+        cellsArray.unshift(stat.city);
     }
 
     cellsArray.forEach(cellString => {
@@ -121,6 +122,25 @@ function removeSortByCity() {
     return false;
 }
 
+// Button Functions
+function switchCountries() {
+    if (!document.getElementById('cityButton')) {
+        // This button does not exist
+        return;
+    }
+
+    var textBox = document.getElementById('countryInput');
+    currentCountry = textBox.value;
+    fetchData("confirmed", true);
+}
+function toggleTableVisible() {
+    if (tabBody.style.display === "none") {
+        tabBody.style.display = "block";
+    }
+    else {
+        tabBody.style.display = "none";
+    }
+}
 function sortByCity() {
     const category = "city";
     fetchData(category, false);
