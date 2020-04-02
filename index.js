@@ -5,7 +5,33 @@ var usingProvince = false;
 var currentCountry = "US";
 
 // First functions
-sortByConfirmed();
+document.addEventListener("DOMContentLoaded", () => {
+    setupCountryInput();
+    sortByConfirmed();
+  });
+
+function setupCountryInput() {
+    if (!document.getElementById('countryInput')) {
+        // This button does not exist
+        return;
+    }
+
+    var countryInput = document.getElementById('countryInput');
+
+    // Enable enter key after input
+    countryInput.addEventListener("keyup", function(event) {
+        // Check that the input field is not empty
+        if (countryInput.value === "") { return; }
+
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        switchCountries();
+        }
+  });
+}
 
 // Fetch Data
 function fetchData(sortBy, reverse) {
@@ -124,13 +150,14 @@ function removeSortByCity() {
 
 // Button Functions
 function switchCountries() {
-    if (!document.getElementById('cityButton')) {
+    if (!document.getElementById('countryInput')) {
         // This button does not exist
         return;
     }
 
-    var textBox = document.getElementById('countryInput');
-    currentCountry = textBox.value;
+    var countryInput = document.getElementById('countryInput');
+    
+    currentCountry = countryInput.value;
     fetchData("confirmed", true);
 }
 function toggleTableVisible() {
