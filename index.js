@@ -133,6 +133,14 @@ function switchCountries() {
     currentCountry = textBox.value;
     fetchData("confirmed", true);
 }
+function toggleTableVisible() {
+    if (tabBody.style.display === "none") {
+        tabBody.style.display = "block";
+    }
+    else {
+        tabBody.style.display = "none";
+    }
+}
 function sortByCity() {
     const category = "city";
     fetchData(category, false);
