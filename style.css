@@ -60,12 +60,14 @@ margin: 0;
     
     background: #00D1B2;
     border-radius: 5px;
+    margin-top: 12px;
 }
 .briefInfo{
     position: absolute;
     width: 458.38px;
     height: 47.67px;
     left: 10px;
+    
 
     font-family: Open Sans;
     font-style: normal;
@@ -76,18 +78,33 @@ margin: 0;
     align-items: center;
 
     color: #FFFFFF;
-
+    margin-top: 5px
 }
 .infoButton {
     position: absolute;
     width: 138px;
     height: 23.83px;
-    left: 15px;
+    left: 10px;
     top: 75px;
+
+    background: #EAEAEA;
+    border: 1px solid #000000;
+    border-radius: 3px;
     
     background: #EAEAEA;
     border: 1px solid #000000;
     border-radius: 3px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+/*    display: flex;*/
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
 }
 /* ----------- Label Style --------------- */
 .sortByLabel {
