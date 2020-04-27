@@ -14,8 +14,8 @@
       <!-- ***********************  ABOUT CORONA VIRUS  *********************** -->
     <header>
         <div class="content-wrap">
-          <h1 class="centeredLabel">Corona Virus Statistics </h1>
-              <h2 class="sortByLabel centeredLabel">Sort By:</h2>
+          <h1 class="title">COVID-19 Stats </h1>
+              <h2 class="description">Some sort of description</h2>
               <div class="sortButtonContainer">
                 <button class="sortButton" onclick="sortByCity()" id="cityButton">City</button>
                 <button class="sortButton" onclick="sortByState()">State/Province</button>
@@ -23,6 +23,12 @@
                 <button class="sortButton" onclick="sortByConfirmed()">Confirmed Cases</button>
                 <button class="sortButton" onclick="sortByDeaths()">Deaths</button>
                 </div>
+        </div>
+        <div class="infoBox">
+            <h2 class="briefInfo">
+            Some sort of message about the current state of the virus and a call to action to discover more about how to stay safe              
+            </h2>
+            <button class="infoButton"> COVID-19 Info </button>
         </div>
     </header>
     <input id="countryInput" placeholder=" Search for country">

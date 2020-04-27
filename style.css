@@ -11,16 +11,85 @@ body {
   line-height: 1.4;
 }
 h1 {
-    color: red;
-    font-size: 50px;
     margin-bottom: 0; 
 }
-/* ----------- Label Style --------------- */
-.centeredLabel {
+
+/* ----------- Site Title --------------- */
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  width: 353px;
+  height: 103px;
+  left: 76px;
+  top: 160px;
+  font-family: Oxygen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 61px;
+  text-transform: capitalize;
+
+  color: #000000;
 }
+.description {
+position: absolute;
+width: 274px;
+height: 45px;
+left: 90px;
+top: 270px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+margin: 0;
+}
+
+/* ----------- Info Box --------------- */
+.infoBox{
+    position: absolute;
+    width: 475px;
+    height: 110px;
+    left: 88px;
+    top: 300px;
+    
+    background: #00D1B2;
+    border-radius: 5px;
+}
+.briefInfo{
+    position: absolute;
+    width: 458.38px;
+    height: 47.67px;
+    left: 10px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+.infoButton {
+    position: absolute;
+    width: 138px;
+    height: 23.83px;
+    left: 15px;
+    top: 75px;
+    
+    background: #EAEAEA;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+/* ----------- Label Style --------------- */
 .sortByLabel {
   font-size: 25px;
   margin-top: 10px;
